@@ -26,3 +26,9 @@ module.exports = {
     res.end( body );
   }
 };
+// 1. Insecure use of eval()
+const userInput = "alert('This is a vulnerability!')";
+eval(userInput); // This is a security risk
+
+// 2. Hardcoded credentials
+const dbPassword = "password123"; // Hardcoding sensitive information
