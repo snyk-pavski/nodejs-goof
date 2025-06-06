@@ -1,9 +1,10 @@
 name: "Snyk Scan"
 
 on:
-  push:
-    branches:
-      - 'main'  # Include any branch starting with demo
+  workflow_dispatch:
+#  push:
+#    branches:
+#      - 'main'  # Include any branch starting with demo
 
 jobs:
   Pipeline-Job:
