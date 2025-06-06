@@ -28,9 +28,9 @@ jobs:
       - name: Run Snyk Code
         run: |
           snyk code test 
-        continue-on-error: true
+        continue-on-error: false
       # Run Snyk OS
       - name: Run Snyk OS
         run: |
           snyk test
-        continue-on-error: true
+        continue-on-error: false
