@@ -12,3 +12,9 @@ jobs:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
         with:
           args: --severity-threshold=high
+  show-message-job:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Display a simple message
+        run: echo "Hello from a GitHub Actions workflow!"
