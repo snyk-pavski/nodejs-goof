@@ -1,4 +1,4 @@
-name: GH Action
+name: Snyk GHA
 on: 
     workflow_dispatch:
 jobs:
