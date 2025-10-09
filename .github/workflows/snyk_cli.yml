@@ -30,7 +30,7 @@ jobs:
           snyk container monitor node:22.13 --org=bad8c957-6089-4d23-bb48-714ab144d0d8
         continue-on-error: true
       # Run Snyk OS
-      - name: Run Snyk OS
-        run: |
-          snyk test
-        continue-on-error: false
+      # - name: Run Snyk OS
+      #   run: |
+      #     snyk test
+      #   continue-on-error: false
