@@ -25,9 +25,9 @@ jobs:
           sudo npm install -g snyk
           snyk auth ${SNYK_TOKEN}
       # Run Snyk Code
-      - name: Run Snyk Code
+      - name: Run Snyk Container Monitor
         run: |
-          snyk code test 
+          snyk container monitor node:22.13 --org=bad8c957-6089-4d23-bb48-714ab144d0d8
         continue-on-error: true
       # Run Snyk OS
       - name: Run Snyk OS
